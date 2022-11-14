@@ -4,11 +4,11 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM debian:bullseye-slim
+FROM debian:buster-slim
 
 RUN set -eux; \
 apt-get update; \
-apt-get install -y --no-install-recommends iproute2 vim procps telnet curl lsof net-tools iputils-ping traceroute stress sysstat \
+apt-get install -y --no-install-recommends iproute2 vim procps telnet curl lsof net-tools iputils-ping traceroute stress sysstat ttf-dejavu fontconfig zip \
 # utilities for keeping Debian and OpenJDK CA certificates in sync
 ca-certificates p11-kit \
 ; \
